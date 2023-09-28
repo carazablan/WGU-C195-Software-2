@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="499.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+    <children>
+      <VBox alignment="CENTER" layoutX="287.0" layoutY="1.0" prefHeight="499.0" prefWidth="251.0" spacing="30.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="95.0" prefWidth="251.0">
+               <children>
+                    <Label fx:id="companyName" text="Company Name">
+                        <font>
+                            <Font size="24.0" />
+                        </font>
+                    </Label>
+                    <Label fx:id="timeZoneLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="270.0" textAlignment="JUSTIFY" />
+               </children></VBox>
+              <TextField fx:id="userName" prefHeight="26.0" prefWidth="290.0" promptText="Username">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+              <PasswordField fx:id="password" prefHeight="26.0" prefWidth="290.0" promptText="Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+              <Button fx:id="loginButton" mnemonicParsing="false" onAction="#onLogin" prefHeight="26.0" prefWidth="149.0" text="Login" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children></VBox>
+    </children>
+</AnchorPane>

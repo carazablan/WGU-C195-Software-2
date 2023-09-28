@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="499.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomersAddController">
+    <children>
+        <Label layoutX="14.0" layoutY="14.0" text="Add Customer" />
+        <TextField fx:id="lastNameTxt" layoutX="256.0" layoutY="142.0" prefHeight="26.0" prefWidth="294.0" />
+        <Label layoutX="190.0" layoutY="105.0" text="First Name" />
+        <Label layoutX="191.0" layoutY="146.0" text="Last Name" />
+        <TextField fx:id="firstNameTxt" layoutX="256.0" layoutY="101.0" prefHeight="26.0" prefWidth="294.0" />
+        <TextField fx:id="customerIdTxt" disable="true" layoutX="256.0" layoutY="57.0" prefHeight="26.0" prefWidth="174.0" text="Customer ID" />
+        <Label layoutX="174.0" layoutY="61.0" text="Customer ID" />
+        <TextField fx:id="addressTxt" layoutX="256.0" layoutY="187.0" prefHeight="26.0" prefWidth="294.0" />
+        <TextField fx:id="postalCodeTxt" layoutX="255.0" layoutY="235.0" />
+        <ComboBox fx:id="firstLevelCB" layoutX="255.0" layoutY="361.0" prefHeight="26.0" prefWidth="218.0" promptText="Select State/Province" />
+        <ComboBox fx:id="countryCB" layoutX="255.0" layoutY="316.0" onAction="#onSelectCountry" prefHeight="26.0" prefWidth="218.0" promptText="Select Country" visibleRowCount="5" />
+        <TextField fx:id="phoneTxt" layoutX="255.0" layoutY="272.0" />
+        <Label layoutX="197.0" layoutY="191.0" text="Address" />
+        <Label layoutX="176.0" layoutY="239.0" text="Postal Code" />
+        <Label layoutX="160.0" layoutY="276.0" text="Phone Number" />
+        <Label layoutX="198.0" layoutY="320.0" text="Country" />
+        <Label layoutX="157.0" layoutY="365.0" text="State / Province" />
+        <Button layoutX="636.0" layoutY="456.0" mnemonicParsing="false" onAction="#onSave" prefHeight="26.0" prefWidth="78.0" text="Save" />
+        <Button layoutX="722.0" layoutY="456.0" mnemonicParsing="false" onAction="#onCancel" prefHeight="26.0" prefWidth="78.0" text="Cancel" />
+    </children>
+</AnchorPane>
